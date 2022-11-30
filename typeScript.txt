@@ -1,1 +1,9 @@
-typeScript practice
+typeScript practice:
+
+installation :-
+
+1) npm install typescript --save-dev //As dev dependency
+2) npm install typescript -g //Install as a global module
+3) npm install typescript@latest -g //Install latest if you have an older version
+
+To verify the installation was successful, enter the command $ "tsc -v" in the Terminal Window.
