@@ -1,4 +1,6 @@
 typeScript practice:
+using node v18.13.1
+using npm v9.1.2
 
 installation :-
 
@@ -6,4 +8,13 @@ installation :-
 2) npm install typescript -g //Install as a global module
 3) npm install typescript@latest -g //Install latest if you have an older version
 
+Verification :-
 To verify the installation was successful, enter the command $ "tsc -v" in the Terminal Window.
+
+After installing tsc run this following command to compile the code
+tsc <fileName>.ts
+
+After running the above command it'll generate ".js" file and now run that ".js" file using node command.
+
+Run :-
+node <fileName>.js
