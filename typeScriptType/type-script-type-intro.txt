@@ -1,0 +1,20 @@
+TypeScript types are as follows :-
+1) Static
+2) Generics
+3) Decorators
+
+1) Static
+In the context of type systems, static types mean "at compile time" or "without running a program." In a statically typed language, variables, parameters, and objects have types that the compiler knows at compile time. The compiler used this information to perform the type checking.
+Static types can be further divided into two sub-categories:
+1.1) Built-in or Primitive type
+1.2) User-defined
+
+1.1) Built-in or Primitive type
+The TypeScript has five built-in data types, which are given below :-
+i) Number
+ii) Void
+iii) String
+iv) Null
+v) Boolean
+
+vi) Any type --> It is the "super type" of all data type in TypeScript. It is used to represents any JavaScript value. If a variable cannot be represented in any of the basic data types, then it can be declared using "Any" data type. Any type is useful when we do not know about the type of value (which might come from an API or 3rd party library), and we want to skip the type-checking on compile time.
