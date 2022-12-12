@@ -12,6 +12,7 @@ let anyList:any[] = [1, 2, 'ABC', 'DEF'];
 console.log(anyList);
 
 // 3) Class
+// see TypeScriptClass.ts
 
 // 4) Enum
 // Enums define a set of named constant. TypeScript provides both string-based and numeric-based enums. By default, enums begin numbering their elements starting from 0, but we can also change this by manually setting the value to one of its elements. TypeScript gets support for enums from ES6.
