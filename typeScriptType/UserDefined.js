@@ -28,6 +28,7 @@ var Month;
     Month[Month["Dec"] = 11] = "Dec";
 })(Month || (Month = {}));
 ;
+console.log('Month => ', Month);
 function isItSummer(month) {
     var isSummer;
     switch (month) {
@@ -43,8 +44,8 @@ function isItSummer(month) {
     }
     return isSummer;
 }
-console.log(isItSummer(Month.Jun));
-console.log(isItSummer(0));
+console.log('Month.Jun', isItSummer(Month.Jun));
+console.log('0', isItSummer(0));
 // 5) Interface
 // 6) Functions
 console.log('Functions');

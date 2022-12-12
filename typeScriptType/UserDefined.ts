@@ -17,7 +17,7 @@ console.log(anyList);
 // 4) Enum
 // Enums define a set of named constant. TypeScript provides both string-based and numeric-based enums. By default, enums begin numbering their elements starting from 0, but we can also change this by manually setting the value to one of its elements. TypeScript gets support for enums from ES6.
 enum Month {
-    Jan,
+    Jan = 0,
     Feb,
     Mar,
     Apr,
@@ -30,6 +30,7 @@ enum Month {
     Nov,
     Dec
 };
+console.log('Month => ', Month);
 function isItSummer(month: Month) {
     let isSummer: boolean;
     switch (month) {
@@ -45,8 +46,8 @@ function isItSummer(month: Month) {
     }
     return isSummer;
 }
-console.log(isItSummer(Month.Jun));
-console.log(isItSummer(0));
+console.log('Month.Jun', isItSummer(Month.Jun));
+console.log('0', isItSummer(0));
 
 // 5) Interface
 
