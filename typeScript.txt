@@ -18,3 +18,22 @@ After running the above command it'll generate ".js" file and now run that ".js"
 
 Run :-
 node <fileName>.js
+
+
+== == == == == == == == == == ==
+folder_structure_work_flow
+== == == == == == == == == == ==
+The use of workflow is to segreage the public files from the soure files.
+
+For maintaing the folder structure we've to follow the following steps :-
+1) Initialize the project using "tsc --init" command. It'll initliazie or create a new file named "tsconfig.json" file which holdes all the information about the project. After initliazie project using above command. We don't have to specify filename everytime. We simple run "tsc" command which automatically compile the whole project.
+2) Open "tsconfig.json" file and edit 2 property having name "rootDir" and "outDir" acc to your project structure.
+"rootDir": "./src" --> will contain the source folder of the project
+"outDir": "./public" --> will contain the output folder of the project
+3) But the main trouble is if we create any file having ".ts" extension. It'll also get compile and make their corresponding compiled ".js" fle. To eliminate this type of error, we've to insert a new property into "tsconfig.json" file after "compilerOption" with having name as "include" which may contain the array of folder with source file location. In our case which is "src" folder.
+After doing step your "tsconfig.json" file will look like this :
+{
+    "compilerOptions": {...},
+    "include": ["src"]
+}
+
