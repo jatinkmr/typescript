@@ -20,6 +20,11 @@ Run :-
 node <fileName>.js
 
 
+We can also install TS using tsc command, which helps us to Initialize any TS section. Following is the command for that
+tsc --init
+
+Now we don't need to compile by giving the name of file every time. We just simply run "tsc" which automatically compile all TS files.
+
 == == == == == == == == == == ==
 folder_structure_work_flow
 == == == == == == == == == == ==
@@ -36,4 +41,18 @@ After doing step your "tsconfig.json" file will look like this :
     "compilerOptions": {...},
     "include": ["src"]
 }
+
+== == == == == == == == == == ==== == == == == == == == == == ==== == == == == == == == == == ==
+Aliases
+== == == == == == == == == == ==== == == == == == == == == == ==== == == == == == == == == == ==
+TypeScript allows types to be defined separately from the variables that use them.
+Aliases allows types to be easily shared between different variables/objects.
+
+1) "type" Aliases can be used for primitives like string or more complex types such as objects and arrays.
+
+syntax for providing any Aliases
+type <Alias_Name> = <Alias_Value>
+eg..,
+type StringOrNum = string | number;
+type objWithPropsType = { name: string, uid: StringOrNum };
 
