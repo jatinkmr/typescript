@@ -48,6 +48,8 @@ Aliases
 TypeScript allows types to be defined separately from the variables that use them.
 Aliases allows types to be easily shared between different variables/objects.
 
+or in simple words we can say that, An alias is an additional name of any type whether it'll be a string, object or an array
+
 1) "type" Aliases can be used for primitives like string or more complex types such as objects and arrays.
 
 syntax for providing any Aliases
