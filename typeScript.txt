@@ -58,3 +58,13 @@ eg..,
 type StringOrNum = string | number;
 type objWithPropsType = { name: string, uid: StringOrNum };
 
+== == == == == == == == == == ==== == == == == == == == == == ==== == == == == == == == == == ==
+Function Signature
+== == == == == == == == == == ==== == == == == == == == == == ==== == == == == == == == == == ==
+To check what type of function this variable can hold by specifying a fucntion signature. It basically descirbes what type of arguments this function is taksing and what type of data it may return as an output.
+
+eg..,
+1) let greet: (a: string, b: string) => void;
+2) let cal: (a: number, b: number, c: string) => number;
+3) type objWithPropsType = { name: string, age: number };
+let logDetails: (obj: objWithPropsType) => void;
